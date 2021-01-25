@@ -55,7 +55,7 @@ go get github.com/ztino/jd_seckill
 ### 登录
 执行以下命令按照提示操作:
 ```shell
-jd_seckill login
+go run main.go login
 ```
 
 ### 自动获取eid,fp
@@ -65,31 +65,31 @@ jd_seckill login
 执行以下命令按照提示操作:
 ```shell
 #参数--good_url商品链接必须设置，链接地址是一个可以加入购物车的商品
-jd_seckill jdTdudfp --good_url https://item.jd.com/100007959916.html
+go run main.go jdTdudfp --good_url https://item.jd.com/100007959916.html
 ```
 > ⚠获取成功后会将获取到的eid和fp写入到配置文件中
 
 ### 预约
 执行以下命令按照提示操作:
 ```shell
-jd_seckill reserve
+go run main.go reserve
 ```
 
 ### 抢购
 执行以下命令按照提示操作:
 ```shell
 #支持--run参数，将跳过抢购等待时间，直接执行抢购任务，适合10点左右未设置抢购时间的使用
-jd_seckill seckill
+go run main.go seckill
 ```
 
 ### 退出登录
 ```shell
-jd_seckill logout
+go run main.go logout
 ```
 
 ### 获取版本号
 ```shell
-jd_seckill version
+go run main.go version
 ```
 
 > ⚠ 以上命令并不是每次都需要执行的，都是可选的，具体使用请参考提示。
